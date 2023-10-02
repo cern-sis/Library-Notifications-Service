@@ -12,11 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Set up services
-        run: |
-          if [ ${{ inputs.directory }} == 'matomo-api' ]; then
-            docker-compose -f matomo-api/docker-compose-tests.yaml up -d
-          fi
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -30,10 +25,13 @@ jobs:
     environment: production
     steps:
       - uses: actions/checkout@v3
-
+      - name: Set up services
+        run: |
+          if [ ${{ inputs.directory }} == 'matomo-api' ]; then
+            docker-compose -f matomo-api/docker-compose-tests.yaml up -d
+          fi
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
-
       - name: Test
         run: pip install poetry && cd ${{ inputs.directory }} && poetry install && poetry run pytest
