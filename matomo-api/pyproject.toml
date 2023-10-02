@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["MJedr <jedrych.marcysia@gmail.com>"]
 packages = [
-    { include = "*", from = "matomo" },
+    { include = "*", from = "src" },
 ]
 
 [tool.poetry.dependencies]
