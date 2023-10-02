@@ -1,0 +1,16 @@
+name: Pull request
+
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    uses: ./.github/workflows/tests.yaml
+    with:
+      directory: ${{ matrix.directory }}
+    strategy:
+      matrix:
+        directory:
+          - matomo-api
+          - Library-Notification-Service

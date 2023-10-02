@@ -1,4 +1,4 @@
-name: Test
+name: Push main
 
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
           - matomo-api
           - Library-Notification-Service
   release:
+    needs: test
     uses: ./.github/workflows/release.yaml
     with:
       directory: ${{ matrix.directory }}
