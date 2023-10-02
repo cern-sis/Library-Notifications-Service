@@ -1,5 +1,6 @@
 import psycopg2
 import pytest
+from api import MatomoAPI
 
 
 @pytest.fixture(scope="module")
@@ -45,3 +46,8 @@ def updated_env(monkeypatch):
     )
     for env_name, env_value in matomo_api_kwargs.items():
         monkeypatch.setenv(env_name, env_value)
+
+
+@pytest.fixture(scope='function')
+def matomo_api():
+    yield MatomoAPI()

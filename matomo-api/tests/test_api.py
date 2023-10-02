@@ -1,9 +1,7 @@
 from datetime import datetime
 
 import pytest
-from api import MatomoAPI
 
-matomo_api = MatomoAPI()
 
 TEST_DAY = day = datetime.strptime("2023-10-02", "%Y-%m-%d")
 
@@ -12,7 +10,7 @@ TEST_DAY = day = datetime.strptime("2023-10-02", "%Y-%m-%d")
     filter_headers=["authorization", "Set-Cookie"],
     filter_query_parameters=["token_auth", "idSite"],
 )
-def test_matomo_api_get_unique_visitors():
+def test_matomo_api_get_unique_visitors(matomo_api):
     visitors = matomo_api.get_unique_visitors(date=TEST_DAY)
     assert visitors > 0
 
@@ -21,7 +19,7 @@ def test_matomo_api_get_unique_visitors():
     filter_headers=["authorization", "Set-Cookie"],
     filter_query_parameters=["token_auth", "idSite"],
 )
-def test_matomo_api_get_visits_per_day():
+def test_matomo_api_get_visits_per_day(matomo_api):
     visitors = matomo_api.get_visits_per_day(date=TEST_DAY)
     assert visitors > 0
 
@@ -30,7 +28,7 @@ def test_matomo_api_get_visits_per_day():
     filter_headers=["authorization", "Set-Cookie"],
     filter_query_parameters=["token_auth", "idSite"],
 )
-def test_matomo_fetch_inspire_statistics(db):
+def test_matomo_fetch_inspire_statistics(db, matomo_api):
     _, db_cursor = db
     matomo_api.fetch_inspire_statistics(date=TEST_DAY)
 
