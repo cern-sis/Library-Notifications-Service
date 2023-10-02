@@ -21,7 +21,8 @@ jobs:
   release:
     uses: ./.github/workflows/release.yaml
     with:
-      directory: ${{ matrix.image-name }}
+      directory: ${{ matrix.directory }}
+      image-name: ${{ matrix.image-name }}
     strategy:
       matrix:
         directory:
