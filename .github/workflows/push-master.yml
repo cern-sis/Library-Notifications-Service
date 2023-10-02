@@ -1,0 +1,32 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+    - main
+
+jobs:
+  test:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      directory: ${{ matrix.directory }}
+    strategy:
+      matrix:
+        directory:
+          - matomo-api
+          - Library-Notification-Service
+  release:
+    uses: ./.github/workflows/reusable-workflow
+    with:
+      directory: ${{ matrix.image-name }}
+    strategy:
+      matrix:
+        directory:
+          - matomo-api
+          - Library-Notification-Service
+        image-name:
+          - cern-sis/matomo-api
+          - cern-sis/library-notifications-service

@@ -1,9 +1,14 @@
 name: Build and export image
 
 on:
-  push:
-    branches: ["main"]
-
+  workflow_call:
+    inputs:
+      image-name:
+        required: true
+        type: string
+      directory:
+        required: true
+        type: string
 jobs:
   build-image:
     runs-on: ubuntu-20.04
@@ -15,17 +20,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Test
-        run: pip install poetry && poetry install && poetry run pytest
-
       - name: Build and export
         id: build
         uses: cern-sis/gh-workflows/.github/actions/docker-build@v6.1.0
         with:
           platforms: linux/amd64,linux/arm64
-          image: cern-sis/library-notifications-service
+          image: ${{ inputs.image-name }}
           registry: registry.cern.ch
           cache: false
+          context: ${{ inputs.directory }}
           username: ${{ secrets.HARBOR_USERNAME }}
           password: ${{ secrets.HARBOR_PASSWORD }}
 
