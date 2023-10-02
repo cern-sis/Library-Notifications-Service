@@ -23,6 +23,7 @@ jobs:
     with:
       directory: ${{ matrix.directory }}
       image-name: ${{ matrix.image-name }}
+    secrets: inherit
     strategy:
       matrix:
         directory:

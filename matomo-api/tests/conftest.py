@@ -30,3 +30,18 @@ def db():
     connection.commit()
     cursor.close()
     connection.close()
+
+
+@pytest.fixture(autouse=True)
+def updated_env(monkeypatch):
+    matomo_api_kwargs = dict(
+        MATOMO_BASE_URL="https://webanalytics.web.cern.ch",
+        MATOMO_AUTH_TOKEN="change-me",
+        MATOMO_SITE_ID=1,
+        DB_HOST="127.0.0.1",
+        DB_NAME="matomo",
+        DB_PASSWORD="matomo",
+        DB_USER="matomo",
+    )
+    for env_name, env_value in matomo_api_kwargs.items():
+        monkeypatch.setenv(env_name, env_value)
