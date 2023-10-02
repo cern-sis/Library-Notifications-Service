@@ -22,7 +22,7 @@ jobs:
       - name: Set up services
         run: |
           if [ ${{ matrix.directory }} == 'matomo-api' ]; then
-            docker-compose -f matomo/docker-compose-tests.yaml up -d
+            docker-compose -f matomo-api/docker-compose-tests.yaml up -d
           fi
       - name: Use the reusable workflow
         uses: ./.github/workflows/reusable-workflow.yml
