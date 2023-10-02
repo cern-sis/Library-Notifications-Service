@@ -32,4 +32,4 @@ jobs:
           python-version: "3.11"
 
       - name: Test
-        run: pip install poetry && cd ${{ inputs.directory }} poetry install && poetry run pytest
+        run: pip install poetry && cd ${{ inputs.directory }} && poetry install && poetry run pytest
