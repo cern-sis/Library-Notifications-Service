@@ -10,21 +10,11 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      directory: ${{ matrix.directory }}
     strategy:
       matrix:
         directory:
           - matomo-api
           - Library-Notification-Service
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up services
-        run: |
-          if [ ${{ matrix.directory }} == 'matomo-api' ]; then
-            docker-compose -f matomo-api/docker-compose-tests.yaml up -d
-          fi
-      - name: Use the reusable workflow
-        uses: ./.github/workflows/reusable-workflow.yml
-        with:
-          directory: ${{ matrix.directory }}
