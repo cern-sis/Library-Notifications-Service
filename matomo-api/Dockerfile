@@ -15,7 +15,7 @@ RUN curl -sSL https://install.python-poetry.org \
 
 
 COPY poetry.lock pyproject.toml ./
-COPY matomo ./matomo
+COPY src ./src
 
 RUN poetry install
 CMD poetry run python matomo/cli.py
