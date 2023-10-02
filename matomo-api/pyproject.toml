@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "matomo"
+version = "0.1.0"
+description = ""
+authors = ["MJedr <jedrych.marcysia@gmail.com>"]
+packages = [
+    { include = "*", from = "matomo" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+SQLAlchemy = "^2.0.21"
+click = "^8.1.7"
+pytest = "^7.4.2"
+pytest-vcr = "^1.0.2"
+psycopg2 = "^2.9.8"
+urllib3 = "1.26.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

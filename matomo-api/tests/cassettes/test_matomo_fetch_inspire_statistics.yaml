@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://webanalytics.web.cern.ch/index.php?date=2023-10-02+00%3A00%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
+  response:
+    body:
+      string: '{"value":7806}'
+    headers:
+      access-control-allow-credentials:
+      - 'false'
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - must-revalidate
+      - private
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Oct 2023 08:36:05 GMT
+      server:
+      - Apache/2.4.57 (Debian)
+      set-cookie:
+      - d63becdd54bbddc0aa193e4f140940ae=59b5ec39d39574dd892a40073505fa96; path=/;
+        HttpOnly; Secure; SameSite=None
+      vary:
+      - Origin
+      x-matomo-request-id:
+      - fefbc
+      x-powered-by:
+      - PHP/8.1.23
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://webanalytics.web.cern.ch/index.php?date=2023-10-02+00%3A00%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
+  response:
+    body:
+      string: '{"value":7806}'
+    headers:
+      access-control-allow-credentials:
+      - 'false'
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - must-revalidate
+      - private
+      content-length:
+      - '14'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 02 Oct 2023 08:36:06 GMT
+      server:
+      - Apache/2.4.57 (Debian)
+      set-cookie:
+      - d63becdd54bbddc0aa193e4f140940ae=59b5ec39d39574dd892a40073505fa96; path=/;
+        HttpOnly; Secure; SameSite=None
+      vary:
+      - Origin
+      x-matomo-request-id:
+      - 349fe
+      x-powered-by:
+      - PHP/8.1.23
+    status:
+      code: 200
+      message: OK
+version: 1
