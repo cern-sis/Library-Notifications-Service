@@ -17,4 +17,4 @@ jobs:
           - matomo
           - notification-service
     with:
-      ref: ${{ matrix.directory }}
+      directory: ${{ matrix.directory }}
