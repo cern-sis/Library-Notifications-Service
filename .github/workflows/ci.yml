@@ -17,6 +17,8 @@ jobs:
           - matomo-api
           - Library-Notification-Service
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Set up services
         run: |
           if [ ${{ matrix.directory }} == 'matomo-api' ]; then
