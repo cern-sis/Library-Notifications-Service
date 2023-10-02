@@ -1,9 +1,6 @@
 name: Test
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
     - main
@@ -26,9 +23,8 @@ jobs:
     secrets: inherit
     strategy:
       matrix:
-        directory:
-          - matomo-api
-          - Library-Notification-Service
-        image-name:
-          - cern-sis/matomo-api
-          - cern-sis/library-notifications-service
+        include:
+          - directory: matomo-api
+            image-name: cern-sis/matomo-api
+          - directory: Library-Notification-Service
+            image-name: cern-sis/library-notifications-service

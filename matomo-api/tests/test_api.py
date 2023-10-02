@@ -3,15 +3,7 @@ from datetime import datetime
 import pytest
 from api import MatomoAPI
 
-matomo_api = MatomoAPI(
-    base_url="https://webanalytics.web.cern.ch",
-    auth_token="change-me",
-    site_id=1,
-    db_host="127.0.0.1",
-    db_name="matomo",
-    db_password="matomo",
-    db_user="matomo",
-)
+matomo_api = MatomoAPI()
 
 TEST_DAY = day = datetime.strptime("2023-10-02", "%Y-%m-%d")
 
