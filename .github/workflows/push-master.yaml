@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    uses: ./.github/workflows/reusable-workflow.yml
+    uses: ./.github/workflows/tests.yaml
     with:
       directory: ${{ matrix.directory }}
     strategy:
@@ -19,7 +19,7 @@ jobs:
           - matomo-api
           - Library-Notification-Service
   release:
-    uses: ./.github/workflows/reusable-workflow
+    uses: ./.github/workflows/release.yaml
     with:
       directory: ${{ matrix.image-name }}
     strategy:
