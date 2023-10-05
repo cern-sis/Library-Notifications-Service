@@ -18,4 +18,4 @@ COPY poetry.lock pyproject.toml ./
 COPY src ./src
 
 RUN poetry install
-CMD poetry run python matomo/cli.py
+CMD poetry run python src/cli.py
