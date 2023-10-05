@@ -1,8 +1,8 @@
 """Module containing methods related to query generator."""
 
-from datetime import datetime, timedelta
 import urllib.parse
-from typing import Optional, List
+from datetime import datetime, timedelta
+from typing import List, Optional
 
 from .env import LIBRARY_CATALOGUE_SITE_URL
 
