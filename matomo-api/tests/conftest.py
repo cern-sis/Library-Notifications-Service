@@ -48,6 +48,6 @@ def updated_env(monkeypatch):
         monkeypatch.setenv(env_name, env_value)
 
 
-@pytest.fixture(scope='function')
+@pytest.fixture(scope="function")
 def matomo_api():
     yield MatomoAPI()

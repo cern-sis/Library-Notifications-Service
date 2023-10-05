@@ -1,11 +1,18 @@
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import click
 from api import MatomoAPI
 
 
+def _get_yesterday_date_string():
+    today = datetime.now()
+    yesterday = today - timedelta(days=1)
+    formatted_yesterday = yesterday.strftime("%Y-%m-%d")
+    return formatted_yesterday
+
+
 @click.command()
-@click.option("--date", "-d", default=date.today())
+@click.option("--date", "-d", default=_get_yesterday_date_string())
 def fetch_matomo_inspire_data(date: str):
     click.echo(f"Fetching data for date {date}")
     if isinstance(date, str):
