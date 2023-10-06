@@ -17,6 +17,7 @@ class MatomoAPI:
         db_password: str = None,
         db_host: str = None,
         db_name: str = None,
+        db_port: int = None
     ) -> None:
         self.base_url = base_url or os.environ.get("MATOMO_BASE_URL")
         self.auth_token = auth_token or os.environ.get("MATOMO_AUTH_TOKEN")
@@ -25,6 +26,7 @@ class MatomoAPI:
         self.db_password = db_password or os.environ.get("DB_PASSWORD")
         self.db_host = db_host or os.environ.get("DB_HOST")
         self.db_name = db_name or os.environ.get("DB_NAME")
+        self.db_port = db_port or os.environ.get("DB_PORT")
         if not all(
             [
                 self.base_url,
@@ -39,7 +41,7 @@ class MatomoAPI:
             raise ValueError("All the required attributes must be passed!")
 
     def create_session(self):
-        database_url = f"postgresql://{self.db_name}:{self.db_password}@{self.db_host}:5432/{self.db_name}"  # noqa: E501
+        database_url = f"postgresql://{self.db_name}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}"  # noqa: E501
         engine = create_engine(database_url)
         Session = sessionmaker(bind=engine)
         session = Session()
@@ -99,3 +101,26 @@ class MatomoAPI:
         session.add(data_entry)
         session.commit()
         session.close()
+
+from sqlalchemy import create_engine
+from sqlalchemy.exc import OperationalError
+
+def test_connection(db_name, db_password, db_host):
+    try:
+        # Construct the database URL
+        database_url = f"postgresql://{db_name}:{db_password}@{db_host}:5432"
+
+        # Create the engine
+        engine = create_engine(database_url)
+
+        # Try to connect to the database
+        engine.connect()
+
+        # Connection successful
+        return True
+    except OperationalError as e:
+        # Connection failed
+        print(f"Connection error: {e}")
+        return False
+
+# Example usage:
