@@ -43,7 +43,7 @@ def updated_env(monkeypatch):
         DB_NAME="matomo",
         DB_PASSWORD="matomo",
         DB_USER="matomo",
-        DB_PORT=5432
+        DB_PORT=5432,
     )
     for env_name, env_value in matomo_api_kwargs.items():
         monkeypatch.setenv(env_name, env_value)

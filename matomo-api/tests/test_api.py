@@ -2,7 +2,6 @@ from datetime import datetime
 
 import pytest
 
-
 TEST_DAY = day = datetime.strptime("2023-10-02", "%Y-%m-%d")
 
 

@@ -17,7 +17,7 @@ class MatomoAPI:
         db_password: str = None,
         db_host: str = None,
         db_name: str = None,
-        db_port: int = None
+        db_port: int = None,
     ) -> None:
         self.base_url = base_url or os.environ.get("MATOMO_BASE_URL")
         self.auth_token = auth_token or os.environ.get("MATOMO_AUTH_TOKEN")
@@ -101,26 +101,3 @@ class MatomoAPI:
         session.add(data_entry)
         session.commit()
         session.close()
-
-from sqlalchemy import create_engine
-from sqlalchemy.exc import OperationalError
-
-def test_connection(db_name, db_password, db_host):
-    try:
-        # Construct the database URL
-        database_url = f"postgresql://{db_name}:{db_password}@{db_host}:5432"
-
-        # Create the engine
-        engine = create_engine(database_url)
-
-        # Try to connect to the database
-        engine.connect()
-
-        # Connection successful
-        return True
-    except OperationalError as e:
-        # Connection failed
-        print(f"Connection error: {e}")
-        return False
-
-# Example usage:

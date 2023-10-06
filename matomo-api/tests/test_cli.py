@@ -1,6 +1,7 @@
 import pytest
 from cli import fetch_matomo_inspire_data
 from click.testing import CliRunner
+from freezegun import freeze_time
 
 
 @pytest.mark.vcr(
@@ -17,6 +18,7 @@ def test_cli(db):
     filter_headers=["authorization", "Set-Cookie"],
     filter_query_parameters=["token_auth", "idSite"],
 )
+@freeze_time("2023-10-05")
 def test_cli_default_arguments(db):
     runner = CliRunner()
     result = runner.invoke(fetch_matomo_inspire_data, [])

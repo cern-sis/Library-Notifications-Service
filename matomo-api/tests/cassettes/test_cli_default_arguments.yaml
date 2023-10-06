@@ -11,10 +11,10 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: GET
-    uri: https://webanalytics.web.cern.ch/index.php?date=2023-01-04+00%3A10%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
+    uri: https://webanalytics.web.cern.ch/index.php?date=2023-10-05+00%3A00%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
   response:
     body:
-      string: '{"value":24}'
+      string: '{"value":5}'
     headers:
       access-control-allow-credentials:
       - 'false'
@@ -24,11 +24,11 @@ interactions:
       - must-revalidate
       - private
       content-length:
-      - '12'
+      - '11'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 05 Oct 2023 13:49:49 GMT
+      - Fri, 06 Oct 2023 11:57:19 GMT
       server:
       - Apache/2.4.57 (Debian)
       set-cookie:
@@ -37,7 +37,7 @@ interactions:
       vary:
       - Origin
       x-matomo-request-id:
-      - d4116
+      - 290ed
       x-powered-by:
       - PHP/8.1.23
     status:
@@ -55,10 +55,10 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: GET
-    uri: https://webanalytics.web.cern.ch/index.php?date=2023-01-04+00%3A10%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
+    uri: https://webanalytics.web.cern.ch/index.php?date=2023-10-05+00%3A00%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
   response:
     body:
-      string: '{"value":24}'
+      string: '{"value":5}'
     headers:
       access-control-allow-credentials:
       - 'false'
@@ -68,11 +68,11 @@ interactions:
       - must-revalidate
       - private
       content-length:
-      - '12'
+      - '11'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 05 Oct 2023 13:49:49 GMT
+      - Fri, 06 Oct 2023 11:57:20 GMT
       server:
       - Apache/2.4.57 (Debian)
       set-cookie:
@@ -81,7 +81,7 @@ interactions:
       vary:
       - Origin
       x-matomo-request-id:
-      - 8fa2e
+      - f0413
       x-powered-by:
       - PHP/8.1.23
     status:

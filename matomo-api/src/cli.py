@@ -1,4 +1,4 @@
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 
 import click
 from api import MatomoAPI
@@ -17,7 +17,7 @@ def fetch_matomo_inspire_data(date: str):
     click.echo(f"Fetching data for date {date}")
     if isinstance(date, str):
         try:
-            date = datetime.strptime(date, "%Y-%M-%d")
+            date = datetime.strptime(date, "%Y-%m-%d")
         except ValueError:
             click.echo("Wrong date format! Aborting.")
             return
