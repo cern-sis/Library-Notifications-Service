@@ -28,7 +28,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 06 Oct 2023 11:57:46 GMT
+      - Tue, 17 Oct 2023 14:39:14 GMT
       server:
       - Apache/2.4.57 (Debian)
       set-cookie:
@@ -37,7 +37,7 @@ interactions:
       vary:
       - Origin
       x-matomo-request-id:
-      - 698dd
+      - 7e802
       x-powered-by:
       - PHP/8.1.23
     status:
@@ -55,7 +55,7 @@ interactions:
       User-Agent:
       - python-requests/2.31.0
     method: GET
-    uri: https://webanalytics.web.cern.ch/index.php?date=2022-01-02+00%3A00%3A00&format=json&method=VisitsSummary.getVisits&module=API&period=day
+    uri: https://webanalytics.web.cern.ch/index.php?date=2022-01-02+00%3A00%3A00&format=json&method=VisitsSummary.getUniqueVisitors&module=API&period=day
   response:
     body:
       string: '{"value":0}'
@@ -72,7 +72,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Fri, 06 Oct 2023 11:57:47 GMT
+      - Tue, 17 Oct 2023 14:39:15 GMT
       server:
       - Apache/2.4.57 (Debian)
       set-cookie:
@@ -81,7 +81,7 @@ interactions:
       vary:
       - Origin
       x-matomo-request-id:
-      - a78fb
+      - b5385
       x-powered-by:
       - PHP/8.1.23
     status:
