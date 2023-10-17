@@ -40,7 +40,7 @@ def updated_env(monkeypatch):
         MATOMO_AUTH_TOKEN="change-me",
         MATOMO_SITE_ID=1,
         DB_HOST="127.0.0.1",
-        DB_NAME="matomo",
+        MATOMO_DB_NAME="matomo",
         DB_PASSWORD="matomo",
         DB_USER="matomo",
         DB_PORT=5432,
