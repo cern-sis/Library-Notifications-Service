@@ -84,7 +84,7 @@ class MatomoAPI:
         return response["value"]
 
     def get_unique_visitors(self, date: date, period="day") -> dict:
-        endpoint = self.endpoint_map["visits_per_day"]
+        endpoint = self.endpoint_map["unique_visitors"]
         params = self._get_request_params(date, period)
         response = self._make_request(endpoint, params)
         return response["value"]
