@@ -41,7 +41,7 @@ class MatomoAPI:
             raise ValueError("All the required attributes must be passed!")
 
     def create_session(self):
-        database_url = f"postgresql://{self.db_name}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}"  # noqa: E501
+        database_url = f"postgresql://{self.db_user}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}"  # noqa: E501
         engine = create_engine(database_url)
         Session = sessionmaker(bind=engine)
         session = Session()
