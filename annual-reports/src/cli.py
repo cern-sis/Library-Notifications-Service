@@ -4,7 +4,7 @@ from api import AnnualReportsAPI
 
 @click.command()
 @click.option("--years", "-y", multiple=True, default=[])
-def fetch_annual_reports(years: list[int]):
+def fetch_annual_reports(years):
     annual_reports = AnnualReportsAPI(years=years)
 
     click.echo("Create tables if missing")
