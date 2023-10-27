@@ -184,7 +184,7 @@ class AnnualReportsAPI:
         self.db_user = db_user or os.environ.get("DB_USER")
         self.db_password = db_password or os.environ.get("DB_PASSWORD")
         self.db_host = db_host or os.environ.get("DB_HOST")
-        self.db_name = db_name or os.environ.get("DB_NAME")
+        self.db_name = db_name or os.environ.get("MATOMO_DB_NAME")
         self.db_port = db_port or os.environ.get("DB_PORT")
         if not all(
             [
