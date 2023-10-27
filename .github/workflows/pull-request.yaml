@@ -14,3 +14,4 @@ jobs:
         directory:
           - matomo-api
           - Library-Notification-Service
+          - annual-reports
