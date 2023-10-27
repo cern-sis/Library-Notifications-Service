@@ -15,6 +15,7 @@ jobs:
         directory:
           - matomo-api
           - Library-Notification-Service
+          - annual-reports
   release:
     needs: test
     uses: ./.github/workflows/release.yaml
