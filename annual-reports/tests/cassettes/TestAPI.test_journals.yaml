@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?ln=en&cc=Published+Articles&p=(affiliation:CERN+or+595:'For+annual+report')+and+year:2022+not+980:ConferencePaper+not+980:BookChapter+not+595:'Not+for+annual+report'&action_search=Search&op1=a&m1=a&p1=&f1=&c=Published+Articles&c=&sf=&so=d&rm=&rg=2000&sc=0&of=tb&ot=773__p
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6VWy5biNhDd6yv0AWl/QHbGmIw5wDiYk6zVshrrxJaIHnD89yk9jBENM/RkBZJL
+        Vbeqbl1pXTUHUqOqLEt8UEToDOenU5/hxp6YolK0GTp0DG+Z1kwcmULVKi/eagJf9Xex4YKhlTVW
+        gQmnSr5z2cvjiFZKCsPBBnMBh1tOneU6w3vSgkmGayVNhsr1brutcN2NmlONdsR7Kjo2QFgH5ySV
+        cS5qqaTV3hMJaHNKARPaEsMUJ71GpThziArQKc/wgdFOQKAkNQgOkXuiB+JcBVNUlHmDmxOhDK+z
+        yc3AhNHJ4Zoo0vesx0uujeLvcHrUJgZwf9mgnQNI0ifgs/JLwNhluBKthYMjqsQZCsNcCcBJNZAj
+        F0dUd9IA+mdpFB0X0SUuUC37cQAnPpgcTtZMffOxUGlVhldcEEHdliDHDCp1FMzIb2OrZDuKVyoT
+        wpWtpRnKzSB1mlr43BjomsaN7HnL8QLlxTZ4JdRwKTSW0D7Fz4SOmIgWN4xaxc2IJuAxKTkMFlAV
+        Ckrp+nn9k1NDsO+zKwMbnL37nS2aC9dQe2mVID2WH/gPJjXlTABFHjj05JyS2Mt3aTz5LO1dl6BH
+        FlLcMtPJVkd0e6az33COptU58wSEAwtGhpQooV6+7xT6vmFEieDBbVbCMJgjKMO/NgBcEOM47KBC
+        RULktJ11R9QA/LQe6ApmQtNOXRn2rUwnOPbRt/ALWQHBoSrhwIYZoHbenoFBrMXXKfPw1QdxuLfL
+        eh7dZOER3ZRqicp6c7tRoJDe95PJXhqyqAw5bLohWVe75oDyqsYAEZZFXiOXDN5JwzTO8yYGaCYW
+        rKeKXqcywMnDrISFM0IxRoh18taxfJ8k4U9LhLEDLgXMl1M2YqKy4aXUHERsYXuIubfahaIkDtYE
+        wmeR1CmICRNaKi8mlSPqOp4CYmVoxaEODflgZnQGkctBMm+F8YeSfiNyMDCxSL9jP+OnjinX3Vvy
+        XrXIzcsIa0ld85iYdCJqV70OVlfC3VW37q2OigjTHFHHFBb8iJfEEBTTT7Jxd1Bkl58vYqS6rdzC
+        ef2L0DvZhHbO1I1sBrlwJnt2mjoQ6Cqbp9P90hB5L4m0PCjH3IM7ffdB/dbVNoB71oeENmE80Fa2
+        DnTDBws/npWTyDbyw1xCkX3LEqBxnDxLJhpX2l3QzyoS9r1KQO1vrMooxv7OB279zdg//fjUz6cR
+        eBAlKsb0eIDbrJ9kKhDox86DZbDZscv8yogXzqO0I6xDKmPPsJWfY9x89cKfZJK27ufcWiDwiSfJ
+        es4hsNjwY2cu5Mzm3ST0TP2EAK81YFb1qfFOv+Nd0YzDwNzzplZkgB7htxnxbSN+kumKXd4W8D6J
+        un+n4k9Tv1W7EMez/Kn9XIfXZ/sly1Tvii+c9JbXe+klYiTvkdCGB3o7X2RuK5j5YPdY/9cL6Nfg
+        /kJNQ04pL+IDxr977h5jPaPuPsdLdubO1L90l8xEHQ2vrUf18HHSK+ZVGudf6PinkiTqkCz+A6RY
+        jiWtDQAA
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1146'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Fri, 27 Oct 2023 10:01:05 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=a38f49d8b513f0b38a28a7a96fc4b900; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+version: 1

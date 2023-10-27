@@ -1,0 +1,428 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?p=(980:ARTICLE+or+980:BOOK+or+980:PROCEEDINGS+or+690:'YELLOW+REPORT'+or+980:REPORT)+and+year:2022+and+(affiliation:CERN+or+260:CERN+or+595:'For+annual+report')+not+595:'Not+for+annual+report'&of=xm&rg=1
+  response:
+    body:
+      string: !!binary |
+        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
+        ihkAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1885'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 27 Oct 2023 09:56:07 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=8fa27cd668cadd98aa9485a3d8175105; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?ln=en&cc=Published+Articles&p=%28affiliation%3ACERN+or+595%3A%27For+annual+report%27%29+and+year%3A2022+not+980%3AConferencePaper+not+980%3ABookChapter+not+595%3A%27Not+for+annual+report%27&action_search=Search&op1=a&m1=a&p1=&f1=&c=Published+Articles&c=&sf=&so=d&rm=&rg=1&sc=0&of=xm
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1920'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 27 Oct 2023 09:56:30 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=959ba56e61a34f27f8d6a1411e8c2e12; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?wl=0&ln=en&amp;cc=Published+Articles&amp;p=980%3AARTICLE+and+%28affiliation%3ACERN+or+595%3A%27For+annual+report%27%29+and+year%3A2022+and+980%3AConferencePaper+not+595%3A%27Not+for+annual+report%27&amp;f=&amp;action_search=Search&amp;c=Published+Articles&amp;c=&amp;sf=author&amp;so=a&amp;rm=&amp;rg=1&amp;sc=1&amp;of=xm
+  response:
+    body:
+      string: !!binary |
+        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
+        pxsAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1657'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 27 Oct 2023 09:56:35 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=8c0fd77f19beeb63afce8eb5382ff660; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?ln=en&p=affiliation%3ACERN+or+260%3ACERN+and+260%3A2022++and+%28980%3ABOOK+or+980%3APROCEEDINGS+or+690%3A%27YELLOW+REPORT%27+or+980%3ABookChapter+or+980%3AREPORT%29+not+595%3A%27Not+for+annual+report%27&action_search=Search&op1=a&m1=a&p1=&f1=&c=Articles+%26+Preprints&c=Books+%26+Proceedings&amp;sf=&amp;so=d&amp;rm=&amp;rg=1&amp;sc=1&amp;of=xm
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '4086'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 27 Oct 2023 09:56:47 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=272d1ea3220a01d558eeef2803b4be0e; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/search?wl=0&ln=en&amp;cc=CERN+Theses&amp;p=502%3A%272022%27+and+502%3Aphd&amp;f=&amp;action_search=Search&amp;c=CERN+Theses&amp;c=&amp;sf=&amp;so=d&amp;rm=&amp;rg=1&amp;sc=1&amp;of=xm
+  response:
+    body:
+      string: !!binary |
+        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
+        9BV2d5sc/gGIxdAPhhYAAA==
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, max-age=3600, no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1726'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 27 Oct 2023 09:56:53 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=695ef8278edc799c9856114d95d00572; path=/; HttpOnly
+      Vary:
+      - ETag,Cache-Control,Accept-Encoding
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+version: 1

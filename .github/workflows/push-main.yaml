@@ -29,3 +29,5 @@ jobs:
             image-name: cern-sis/matomo-api
           - directory: Library-Notification-Service
             image-name: cern-sis/library-notifications-service
+          - directory: annual-reports
+            image-name: cern-sis/annual-reports

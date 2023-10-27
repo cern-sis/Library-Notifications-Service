@@ -30,6 +30,9 @@ jobs:
           if [ ${{ inputs.directory }} == 'matomo-api' ]; then
             docker-compose -f matomo-api/docker-compose-tests.yaml up -d
           fi
+          if [ ${{ inputs.directory }} == 'annual-reports' ]; then
+            docker-compose -f annual-reports/docker-compose.yml up -d
+          fi
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
