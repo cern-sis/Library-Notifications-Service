@@ -1,3 +1,5 @@
+import datetime
+
 import pytest
 from api import AnnualReportsAPI
 from models import Categories, Journals, Publications
@@ -32,7 +34,7 @@ class TestAPI:
             assert publications[0].contributions_to_conference_proceedings == 1118
             assert publications[0].reports_books_and_book_chapters == 26
             assert publications[0].theses == 275
-            assert publications[0].year == 2022
+            assert publications[0].year == datetime.date(2022, 1, 1)
 
         with Session(self.annual_reports.engine) as session:
             session.query(Publications).delete()
@@ -74,7 +76,7 @@ class TestAPI:
             for category in categories:
                 assert category.category in expected
                 assert category.count == expected[category.category]
-                assert category.year == 2022
+                assert category.year == datetime.date(2022, 1, 1)
 
         with Session(self.annual_reports.engine) as session:
             session.query(Categories).delete()
@@ -215,7 +217,7 @@ class TestAPI:
             for journal in journals:
                 assert journal.journal in expected
                 assert journal.count == expected[journal.journal]
-                assert journal.year == 2022
+                assert journal.year == datetime.date(2022, 1, 1)
 
         with Session(self.annual_reports.engine) as session:
             session.query(Journals).delete()
