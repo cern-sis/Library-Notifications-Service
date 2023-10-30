@@ -211,12 +211,13 @@ class AnnualReportsAPI:
             year = int(year)
             LOGGING.info("Getting categories", year=year)
             results = get_subject_categories_per_year(year)
+            year_to_date = datetime.date(year, 1, 1)
             with Session(self.engine) as session:
                 try:
                     LOGGING.info("Deleting categories", year=year)
-                    session.query(Categories).filter_by(year=year).delete()
+                    session.query(Categories).filter_by(year=year_to_date).delete()
                     records = [
-                        Categories(year=year, category=key, count=value)
+                        Categories(year=year_to_date, category=key, count=value)
                         for key, value in results.items()
                     ]
                     LOGGING.info(
@@ -235,12 +236,13 @@ class AnnualReportsAPI:
             year = int(year)
             LOGGING.info("Getting journals", year=year)
             results = get_journals_per_year(year)
+            year_to_date = datetime.date(year, 1, 1)
             with Session(self.engine) as session:
                 try:
                     LOGGING.info("Deleting journals", year=year)
-                    session.query(Journals).filter_by(year=year).delete()
+                    session.query(Journals).filter_by(year=year_to_date).delete()
                     records = [
-                        Journals(year=year, journal=key, count=value)
+                        Journals(year=year_to_date, journal=key, count=value)
                         for key, value in results.items()
                     ]
                     LOGGING.info(
@@ -258,12 +260,13 @@ class AnnualReportsAPI:
             year = int(year)
             LOGGING.info("Getting publications", year=year)
             results = get_publications_per_year(year)
+            year_to_date = datetime.date(year, 1, 1)
             with Session(self.engine) as session:
                 try:
                     LOGGING.info("Deleting publications", year=year)
-                    session.query(Publications).filter_by(year=year).delete()
+                    session.query(Publications).filter_by(year=year_to_date).delete()
                     LOGGING.info("Populate publications", publications=results)
-                    records = Publications(year=year, **results)
+                    records = Publications(year=year_to_date, **results)
                     session.add(records)
                     session.commit()
                 except Exception as e:
