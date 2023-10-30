@@ -200,7 +200,7 @@ class AnnualReportsAPI:
         if not self.years:
             current_year = datetime.datetime.now().year
             self.years = list(range(2004, current_year + 1))
-        database_url = f"postgresql://{self.db_name}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}"  # noqa: E501
+        database_url = f"postgresql://{self.db_user}:{self.db_password}@{self.db_host}:{self.db_port}/{self.db_name}"  # noqa: E501
         self.engine = create_engine(database_url)
 
     def create_tables(self):
