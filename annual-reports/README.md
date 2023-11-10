@@ -10,6 +10,7 @@ export DB_USER=annual
 export DB_NAME=annual
 export DB_HOST=localhost
 export DB_PORT=5432
+export CDS_TOKEN=ADD_TOKEN
 ```
 
 ## Run
