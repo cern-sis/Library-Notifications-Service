@@ -1,0 +1,192 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://cds.cern.ch/tools/custom_query_summary.py?end=2022&otag=65017a&refresh=1&repeated_values=0&start=2022
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<customquerysummary tag=\"65017a\"
+        query=\"980:ARTICLE and (affiliation:CERN or 595:'For annual report') not
+        980:ConferencePaper not 980:BookChapter not 595:'Not for annual report'\">\n<yearly_report
+        year=\"2022\" publications=\"2123\" journals=\"978\" contributions=\"1117\"
+        rest=\"27\" theses=\"278\">\n    <line>\n        <nb>357</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Particle%20Physics%20-%20Experiment%22&amp;wl=0</link>\n
+        \       <result>Particle Physics - Experiment</result>\n    </line>\n    <line>\n
+        \       <nb>255</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Particle%20Physics%20-%20Phenomenology%22&amp;wl=0</link>\n
+        \       <result>Particle Physics - Phenomenology</result>\n    </line>\n    <line>\n
+        \       <nb>203</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22hep-ph%22&amp;wl=0</link>\n
+        \       <result>hep-ph</result>\n    </line>\n    <line>\n        <nb>172</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22hep-ex%22&amp;wl=0</link>\n
+        \       <result>hep-ex</result>\n    </line>\n    <line>\n        <nb>156</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Detectors%20and%20Experimental%20Techniques%22&amp;wl=0</link>\n
+        \       <result>Detectors and Experimental Techniques</result>\n    </line>\n
+        \   <line>\n        <nb>115</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Nuclear%20Physics%20-%20Experiment%22&amp;wl=0</link>\n
+        \       <result>Nuclear Physics - Experiment</result>\n    </line>\n    <line>\n
+        \       <nb>114</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Particle%20Physics%20-%20Theory%22&amp;wl=0</link>\n
+        \       <result>Particle Physics - Theory</result>\n    </line>\n    <line>\n
+        \       <nb>113</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Accelerators%20and%20Storage%20Rings%22&amp;wl=0</link>\n
+        \       <result>Accelerators and Storage Rings</result>\n    </line>\n    <line>\n
+        \       <nb>96</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Astrophysics%20and%20Astronomy%22&amp;wl=0</link>\n
+        \       <result>Astrophysics and Astronomy</result>\n    </line>\n    <line>\n
+        \       <nb>86</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22hep-th%22&amp;wl=0</link>\n
+        \       <result>hep-th</result>\n    </line>\n    <line>\n        <nb>62</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.ins-det%22&amp;wl=0</link>\n
+        \       <result>physics.ins-det</result>\n    </line>\n    <line>\n        <nb>60</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22General%20Relativity%20and%20Cosmology%22&amp;wl=0</link>\n
+        \       <result>General Relativity and Cosmology</result>\n    </line>\n    <line>\n
+        \       <nb>48</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22gr-qc%22&amp;wl=0</link>\n
+        \       <result>gr-qc</result>\n    </line>\n    <line>\n        <nb>47</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.CO%22&amp;wl=0</link>\n
+        \       <result>astro-ph.CO</result>\n    </line>\n    <line>\n        <nb>42</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22nucl-ex%22&amp;wl=0</link>\n
+        \       <result>nucl-ex</result>\n    </line>\n    <line>\n        <nb>41</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Computing%20and%20Computers%22&amp;wl=0</link>\n
+        \       <result>Computing and Computers</result>\n    </line>\n    <line>\n
+        \       <nb>39</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Nuclear%20Physics%20-%20Theory%22&amp;wl=0</link>\n
+        \       <result>Nuclear Physics - Theory</result>\n    </line>\n    <line>\n
+        \       <nb>28</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.acc-ph%22&amp;wl=0</link>\n
+        \       <result>physics.acc-ph</result>\n    </line>\n    <line>\n        <nb>27</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Other%20Fields%20of%20Physics%22&amp;wl=0</link>\n
+        \       <result>Other Fields of Physics</result>\n    </line>\n    <line>\n
+        \       <nb>25</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22nucl-th%22&amp;wl=0</link>\n
+        \       <result>nucl-th</result>\n    </line>\n    <line>\n        <nb>23</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Health%20Physics%20and%20Radiation%20Effects%22&amp;wl=0</link>\n
+        \       <result>Health Physics and Radiation Effects</result>\n    </line>\n
+        \   <line>\n        <nb>17</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Particle%20Physics%20-%20Lattice%22&amp;wl=0</link>\n
+        \       <result>Particle Physics - Lattice</result>\n    </line>\n    <line>\n
+        \       <nb>16</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.HE%22&amp;wl=0</link>\n
+        \       <result>astro-ph.HE</result>\n    </line>\n    <line>\n        <nb>15</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Mathematical%20Physics%20and%20Mathematics%22&amp;wl=0</link>\n
+        \       <result>Mathematical Physics and Mathematics</result>\n    </line>\n
+        \   <line>\n        <nb>15</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Physics%20in%20General%22&amp;wl=0</link>\n
+        \       <result>Physics in General</result>\n    </line>\n    <line>\n        <nb>14</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cs.LG%22&amp;wl=0</link>\n
+        \       <result>cs.LG</result>\n    </line>\n    <line>\n        <nb>13</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22General%20Theoretical%20Physics%22&amp;wl=0</link>\n
+        \       <result>General Theoretical Physics</result>\n    </line>\n    <line>\n
+        \       <nb>13</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22hep-lat%22&amp;wl=0</link>\n
+        \       <result>hep-lat</result>\n    </line>\n    <line>\n        <nb>13</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22quant-ph%22&amp;wl=0</link>\n
+        \       <result>quant-ph</result>\n    </line>\n    <line>\n        <nb>9</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Quantum%20Technology%22&amp;wl=0</link>\n
+        \       <result>Quantum Technology</result>\n    </line>\n    <line>\n        <nb>8</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Engineering%22&amp;wl=0</link>\n
+        \       <result>Engineering</result>\n    </line>\n    <line>\n        <nb>8</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.data-an%22&amp;wl=0</link>\n
+        \       <result>physics.data-an</result>\n    </line>\n    <line>\n        <nb>6</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.IM%22&amp;wl=0</link>\n
+        \       <result>astro-ph.IM</result>\n    </line>\n    <line>\n        <nb>6</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Chemical%20Physics%20and%20Chemistry%22&amp;wl=0</link>\n
+        \       <result>Chemical Physics and Chemistry</result>\n    </line>\n    <line>\n
+        \       <nb>6</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Condensed%20Matter%22&amp;wl=0</link>\n
+        \       <result>Condensed Matter</result>\n    </line>\n    <line>\n        <nb>6</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Education%20and%20Outreach%22&amp;wl=0</link>\n
+        \       <result>Education and Outreach</result>\n    </line>\n    <line>\n
+        \       <nb>4</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.GA%22&amp;wl=0</link>\n
+        \       <result>astro-ph.GA</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cond-mat.str-el%22&amp;wl=0</link>\n
+        \       <result>cond-mat.str-el</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Data%20Analysis%20and%20Statistics%22&amp;wl=0</link>\n
+        \       <result>Data Analysis and Statistics</result>\n    </line>\n    <line>\n
+        \       <nb>4</nb>\n        <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.AG%22&amp;wl=0</link>\n
+        \       <result>math.AG</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Other%22&amp;wl=0</link>\n
+        \       <result>Other</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.atom-ph%22&amp;wl=0</link>\n
+        \       <result>physics.atom-ph</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.comp-ph%22&amp;wl=0</link>\n
+        \       <result>physics.comp-ph</result>\n    </line>\n    <line>\n        <nb>4</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.plasm-ph%22&amp;wl=0</link>\n
+        \       <result>physics.plasm-ph</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cond-mat.stat-mech%22&amp;wl=0</link>\n
+        \       <result>cond-mat.stat-mech</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cs.CV%22&amp;wl=0</link>\n
+        \       <result>cs.CV</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math-ph%22&amp;wl=0</link>\n
+        \       <result>math-ph</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.MP%22&amp;wl=0</link>\n
+        \       <result>math.MP</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Nonlinear%20Systems%22&amp;wl=0</link>\n
+        \       <result>Nonlinear Systems</result>\n    </line>\n    <line>\n        <nb>3</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.gen-ph%22&amp;wl=0</link>\n
+        \       <result>physics.gen-ph</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.DS%22&amp;wl=0</link>\n
+        \       <result>math.DS</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22nlin.SI%22&amp;wl=0</link>\n
+        \       <result>nlin.SI</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.chem-ph%22&amp;wl=0</link>\n
+        \       <result>physics.chem-ph</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.med-ph%22&amp;wl=0</link>\n
+        \       <result>physics.med-ph</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.optics%22&amp;wl=0</link>\n
+        \       <result>physics.optics</result>\n    </line>\n    <line>\n        <nb>2</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22stat.ML%22&amp;wl=0</link>\n
+        \       <result>stat.ML</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.EP%22&amp;wl=0</link>\n
+        \       <result>astro-ph.EP</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22astro-ph.SR%22&amp;wl=0</link>\n
+        \       <result>astro-ph.SR</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cond-mat.mes-hall%22&amp;wl=0</link>\n
+        \       <result>cond-mat.mes-hall</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cond-mat.other%22&amp;wl=0</link>\n
+        \       <result>cond-mat.other</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cond-mat.quant-gas%22&amp;wl=0</link>\n
+        \       <result>cond-mat.quant-gas</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cs.AR%22&amp;wl=0</link>\n
+        \       <result>cs.AR</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cs.DC%22&amp;wl=0</link>\n
+        \       <result>cs.DC</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22cs.PF%22&amp;wl=0</link>\n
+        \       <result>cs.PF</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.AT%22&amp;wl=0</link>\n
+        \       <result>math.AT</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.CA%22&amp;wl=0</link>\n
+        \       <result>math.CA</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22math.DG%22&amp;wl=0</link>\n
+        \       <result>math.DG</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22nlin.CD%22&amp;wl=0</link>\n
+        \       <result>nlin.CD</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22Other%20Subjects%22&amp;wl=0</link>\n
+        \       <result>Other Subjects</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.app-ph%22&amp;wl=0</link>\n
+        \       <result>physics.app-ph</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.ed-ph%22&amp;wl=0</link>\n
+        \       <result>physics.ed-ph</result>\n    </line>\n    <line>\n        <nb>1</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22physics.soc-ph%22&amp;wl=0</link>\n
+        \       <result>physics.soc-ph</result>\n    </line>\n    <line>\n        <nb>2352</nb>\n
+        \       <link>http://cds.cern.ch/search?p=980%3AARTICLE%20and%20%28affiliation%3ACERN%20or%20595%3A%27For%20annual%20report%27%29%20not%20980%3AConferencePaper%20not%20980%3ABookChapter%20not%20595%3A%27Not%20for%20annual%20report%27%20and%20year%3A2022%20and%2065017a%3A%22TOTAL%22&amp;wl=0</link>\n
+        \       <result>TOTAL</result>\n    </line>\n</yearly_report>\n</customquerysummary>"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache="set-cookie"
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 10 Nov 2023 09:45:27 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - INVENIOSESSIONstub=NO; path=/; HttpOnly
+      - INVENIOSESSION=40dc909f530ac2e44bd79bab1f88f7b0; path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 cds.cern.ch
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -9,10 +9,10 @@ class Publications(Base):
 
     id = Column(Integer, primary_key=True)
     publications = Column(Integer, nullable=False)
-    published_articles = Column(Integer, nullable=False)
-    contributions_to_conference_proceedings = Column(Integer, nullable=False)
-    reports_books_and_book_chapters = Column(Integer, nullable=False)
+    journals = Column(Integer, nullable=False)
+    contributions = Column(Integer, nullable=False)
     theses = Column(Integer, nullable=False)
+    rest = Column(Integer, nullable=False)
     year = Column(Date, nullable=False)
 
 

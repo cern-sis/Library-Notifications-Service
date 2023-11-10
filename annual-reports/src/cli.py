@@ -10,11 +10,8 @@ def fetch_annual_reports(years):
     click.echo("Create tables if missing")
     annual_reports.create_tables()
 
-    click.echo("Fetching categories")
-    annual_reports.get_categories()
-
-    click.echo("Fetching journals")
-    annual_reports.get_journals()
+    click.echo("Fetching subjects")
+    annual_reports.get_subjects()
 
     click.echo("Fetching publications")
     annual_reports.get_publications()
