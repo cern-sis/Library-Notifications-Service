@@ -1,6 +1,5 @@
 """Module interacting with library catalogue api"""
 
-
 import json
 import urllib.parse
 from typing import List

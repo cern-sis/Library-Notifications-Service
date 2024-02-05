@@ -1,6 +1,5 @@
 """The command line module containing all the commands to filter documents."""
 
-
 from typing import Tuple
 
 import click
