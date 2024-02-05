@@ -58,6 +58,11 @@ def get_backoffice_latest_pids() -> List[str]:
     return pids
 
 
+def get_api_url(query: str) -> str:
+    query_encoded = urllib.parse.quote(query)
+    return f"{LIBRARY_CATALOGUE_SITE_API}{query_encoded}"
+
+
 def get_results_from_pids(pids: List[str], subjects: List[str]) -> List[dict]:
     published = get_last_five_years_range()
     results = []
@@ -73,13 +78,12 @@ def get_results_from_pids(pids: List[str], subjects: List[str]) -> List[dict]:
         result = get_site_api_docs(catalogue_site_query)
         results.extend(result)
 
-    return results
+    return results, catalogue_site_query
 
 
 def get_site_api_docs(query: str) -> List[dict]:
-    query_encoded = urllib.parse.quote(query)
-
-    response = requests.get(f"{LIBRARY_CATALOGUE_SITE_API}{query_encoded}")
+    url = get_api_url(query)
+    response = requests.get(url)
     try:
         response.raise_for_status()
     except requests.exceptions.HTTPError as e:

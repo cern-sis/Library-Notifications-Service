@@ -10,7 +10,7 @@ from ..api import (
     get_results_from_pids,
     send_channel_request,
 )
-from ..utils import create_channel_message
+from ..utils import create_channel_message, get_api_url
 
 
 @click.command()
@@ -49,12 +49,14 @@ def cli(subjects: Tuple[str, ...], title: str, target: str) -> None:
         click.echo("No updates in the backoffice!")
         return
 
-    results = get_results_from_pids(latest_pids, list(subjects))
+    results, query = get_results_from_pids(latest_pids, list(subjects))
     if not results:
         click.echo("No results visible in the catalogue!")
         return
 
-    message = create_channel_message(results, title)
+    url = get_api_url(query)
+
+    message = create_channel_message(results, title, url)
     notification_status = send_channel_request(message, target)
     if notification_status == 200:
         click.echo("Notification sent successfully!")
