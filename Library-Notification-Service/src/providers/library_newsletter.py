@@ -5,11 +5,12 @@ from typing import Tuple
 import click
 
 from ..api import (
+    get_api_url,
     get_backoffice_latest_pids,
     get_results_from_pids,
     send_channel_request,
 )
-from ..utils import create_channel_message, get_api_url
+from ..utils import create_channel_message
 
 
 @click.command()
