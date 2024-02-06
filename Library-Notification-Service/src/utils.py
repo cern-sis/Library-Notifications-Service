@@ -110,7 +110,7 @@ def create_channel_message(message: List[dict], title: str, url: str) -> str:
             html_string += f"<li><a href='{doc_url}'>{doc_title}</a></li>\n"
     html_string += "</ul>"
 
-    # if len(message) > 10:
-    html_string += f"<p><a href='{url}'>View all</a></p>"
+    if len(message) > 10:
+        html_string += f"<p><a href='{url}'>View all</a></p>"
 
     return html_string
