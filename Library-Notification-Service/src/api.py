@@ -11,6 +11,7 @@ from .env import (
     LIBRARY_CATALOGUE_BACKOFFICE_EITEMS_API,
     LIBRARY_CATALOGUE_BACKOFFICE_ITEMS_API,
     LIBRARY_CATALOGUE_SITE_API,
+    LIBRARY_CATALOGUE_SITE_URL,
     NOTIFICATIONS_API_SECRET,
     NOTIFICATIONS_API_URL,
     NOTIFICATIONS_CHANNEL_ID,
@@ -60,6 +61,11 @@ def get_backoffice_latest_pids() -> List[str]:
 def get_api_url(query: str) -> str:
     query_encoded = urllib.parse.quote(query)
     return f"{LIBRARY_CATALOGUE_SITE_API}{query_encoded}"
+
+
+def get_catalogue_site_url(query: str) -> str:
+    query_encoded = urllib.parse.quote(query)
+    return f"{LIBRARY_CATALOGUE_SITE_URL}{query_encoded}"
 
 
 def get_results_from_pids(pids: List[str], subjects: List[str]) -> List[dict]:
