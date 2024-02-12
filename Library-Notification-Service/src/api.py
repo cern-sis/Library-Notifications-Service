@@ -16,12 +16,7 @@ from .env import (
     NOTIFICATIONS_API_URL,
     NOTIFICATIONS_CHANNEL_ID,
 )
-from .utils import (
-    get_full_query,
-    get_last_five_years_range,
-    get_last_week_date_range,
-    get_pids_from_docs,
-)
+from .utils import get_full_query, get_last_week_date_range, get_pids_from_docs
 
 
 def get_library_catalogue_backoffice_urls() -> List[str]:
@@ -69,7 +64,6 @@ def get_catalogue_site_url(query: str) -> str:
 
 
 def get_results_from_pids(pids: List[str], subjects: List[str]) -> List[dict]:
-    published = get_last_five_years_range()
     results = []
 
     # divide pids into chunks of 40 to reduce query size
@@ -77,9 +71,7 @@ def get_results_from_pids(pids: List[str], subjects: List[str]) -> List[dict]:
         chunked_pids = pids[i : i + 40]
         if not chunked_pids:
             continue
-        catalogue_site_query = get_full_query(
-            pid=chunked_pids, pub_year=published, subject=subjects
-        )
+        catalogue_site_query = get_full_query(pid=chunked_pids, subject=subjects)
         result = get_site_api_docs(catalogue_site_query)
         results.extend(result)
 
