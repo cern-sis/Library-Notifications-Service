@@ -6,7 +6,6 @@ import click
 
 from ..api import (
     get_backoffice_latest_pids,
-    get_catalogue_site_url,
     get_results_from_pids,
     send_channel_request,
 )
@@ -54,9 +53,7 @@ def cli(subjects: Tuple[str, ...], title: str, target: str) -> None:
         click.echo("No results visible in the catalogue!")
         return
 
-    url = get_catalogue_site_url(query)
-
-    message = create_channel_message(results, title, url)
+    message = create_channel_message(results, title)
     click.echo(
         f"Subject: {subjects} -  Title: {title} - Results: {len(results)} results."
     )

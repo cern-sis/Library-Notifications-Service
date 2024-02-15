@@ -99,7 +99,7 @@ def get_pids_from_docs(docs: List[dict]) -> List[str]:
     return pids
 
 
-def create_channel_message(message: List[dict], title: str, url: str) -> str:
+def create_channel_message(message: List[dict], title: str) -> str:
     html_string = f"<h4>Latest books/e-books for {title}</h4>\n<ul>\n"
     for doc in message:
         doc_id = doc.get("id", "")
@@ -109,8 +109,5 @@ def create_channel_message(message: List[dict], title: str, url: str) -> str:
             doc_title = doc.get("metadata", {}).get("title", "")
             html_string += f"<li><a href='{doc_url}'>{doc_title}</a></li>\n"
     html_string += "</ul>"
-
-    if len(message) > 10:
-        html_string += f"<p><a href='{url}'>View all</a></p>"
 
     return html_string
