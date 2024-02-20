@@ -1,5 +1,6 @@
 """The command line module containing all the commands to filter documents."""
 
+import logging
 from typing import Tuple
 
 import click
@@ -10,6 +11,8 @@ from ..api import (
     send_channel_request,
 )
 from ..utils import create_channel_message
+
+logger = logging.getLogger(__name__)
 
 
 @click.command()
@@ -61,6 +64,9 @@ def cli(subjects: Tuple[str, ...], title: str, target: str) -> None:
     if response.status_code == 200:
         click.echo("Notification sent successfully!")
     else:
+        logger.error(
+            f"Notification failed with status code: {response.status_code}:{response.text}"
+        )
         click.echo(
             f"Notification failed with status code: {response.status_code}:{response.text}",
             err=True,
