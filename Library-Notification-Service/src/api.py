@@ -109,9 +109,4 @@ def send_channel_request(data: str, target: str) -> int:
     response = requests.post(
         NOTIFICATIONS_API_URL, headers=headers, data=json.dumps(request_data)
     )
-    try:
-        response.raise_for_status()
-    except requests.exceptions.HTTPError as e:
-        raise Exception(f"Request failed with status code: {e}")
-
-    return response.status_code
+    return response

@@ -39,7 +39,7 @@ def cli(subjects: Tuple[str, ...], title: str, target: str) -> None:
     The published year is last 5 years from running the job.
 
     Supported Parameters: subjects, title and target group.
-    python3 -m src.cli --subjects "005*:UDC" --subjects "65*:"
+    python -m src.cli newsletter --subjects "005*:UDC" --subjects "65*:"
         --title 'Administration/Management'
         --target 'library-newsletter-notif-admin-management'
     """
@@ -50,17 +50,21 @@ def cli(subjects: Tuple[str, ...], title: str, target: str) -> None:
 
     results, query = get_results_from_pids(latest_pids, list(subjects))
     if not results:
-        click.echo("No results visible in the catalogue!")
+        click.echo(f"No results visible in the catalogue! {subjects}")
         return
 
     message = create_channel_message(results, title)
     click.echo(
         f"Subject: {subjects} -  Title: {title} - Results: {len(results)} results."
     )
-    notification_status = send_channel_request(message, target)
-    if notification_status == 200:
+    response = send_channel_request(message, target)
+    if response.status_code == 200:
         click.echo("Notification sent successfully!")
-        return
+    else:
+        click.echo(
+            f"Notification failed with status code: {response.status_code}:{response.text}",
+            err=True,
+        )
 
 
 if __name__ == "__main__":
