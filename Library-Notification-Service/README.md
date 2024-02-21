@@ -119,3 +119,20 @@ Add a new container with the required arguments (subject, title, target) in the 
 1. api.py - Module containing calls to library catalouge, backoffice and notifications instances.
 2. cli.py - Main module conatining the supported command line arguments.
 3. utils.py - Module containing helper methods to manipulate data.
+
+
+## Example
+
+```
+python -m src.cli newsletter --subjects '65*:' --subjects '005*:UDC' --title 'Administration/Management' --target 'library-newsletter-notif-management'
+
+python -m src.cli newsletter --subjects '52*:' --title 'Astronomy/Astrophysics' --target 'library-newsletter-notif-astrophysics'
+
+python -m src.cli newsletter --subjects '62*:' --title 'Engineering/Technology' --target 'library-newsletter-notif-engineering'
+
+python -m src.cli newsletter --subjects '004*:' --subjects '006*:' --subjects '007*:' --subjects '005*:DEWEY' --title 'Information Technology' --target 'library-newsletter-notif-it'
+
+python -m src.cli newsletter --subjects '51*:' --title 'Mathematics' --target 'library-newsletter-notif-math'
+
+python -m src.cli newsletter --subjects '53*:' --title 'Physics' --target 'library-newsletter-notif-physics'
+```
